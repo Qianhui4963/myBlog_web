@@ -1,8 +1,8 @@
 <template>
   <div class="site-aside-contatiner">
       <Avatar :url="data.avatar" v-if="data"/>
-      <Contact />
       <Menu />
+      <Contact />
       <p class="other" v-if="data">{{data.icp}}</p>
   </div>
 </template>
@@ -32,6 +32,7 @@ export default {
 .other{
     font-size: 12px;
     text-align: center;
+    color: aliceblue;
 }
 
 .contact-contatiner{

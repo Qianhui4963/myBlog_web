@@ -1,18 +1,33 @@
 <template>
   <ul class="contact-contatiner">
     <li>
-      <a href="/">
-        <div class="icon"><Icon :type="'home'" /></div>
-        <span>首页</span></a
+      <a href="https://github.com/Qianhui4963/myBlog_web/" target="_blank">
+        <div class="icon"><Icon type="github" /></div>
+        <span>GitHub</span></a
       >
     </li>
     <li>
       <a href="#">
-        <div class="icon"><Icon :type="'about'" /></div>
-        <span>关于我</span></a
+        <div class="icon"><Icon type="email" /></div>
+        <span>2741607698@qq.com</span></a
+      >
+    </li>
+    <li>
+      <a href="#">
+        <div class="icon"><Icon type="qq" /></div>
+        <span>2741607698</span></a
       >
       <div class="pop">
-        <img src="./pop.jpg" alt="" />
+        <img src="../../../assets/qq.png" />
+      </div>
+    </li>
+    <li>
+      <a href="#">
+        <div class="icon"><Icon type="weixin" /></div>
+        <span>15826753270</span></a
+      >
+      <div class="pop">
+        <img src="../../../assets/qq.png" />
       </div>
     </li>
   </ul>
@@ -44,7 +59,7 @@ export default {
     line-height: 30px;
     color: @gray;
     position: relative;
-    margin: 5px 0;
+    margin: 10px 0;
     &:hover .pop {
       transform: translateX(-25%) scaleY(1);
     }

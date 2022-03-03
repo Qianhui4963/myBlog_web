@@ -31,7 +31,7 @@ export default {
 
 <style scoped>
 .avatar {
-  margin: 0 auto;
+  margin: 0 auto 30px;
 }
 /* scoped保证类名不冲突 */
 /* 带有作用域的样式 */

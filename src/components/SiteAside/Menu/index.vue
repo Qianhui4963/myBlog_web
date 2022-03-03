@@ -58,13 +58,6 @@ export default {
           icon: "news",
           exact: true,
         },
-        {
-          name: "email",
-          link: "/email",
-          title: "邮箱2741607698@qq.com",
-          icon: "email",
-          exact: false, // 这个不做精确匹配
-        },
       ],
     };
   },
@@ -76,6 +69,7 @@ export default {
 @import url("~@/styles/global.less");
 nav {
   font-size: 1rem;
+  color: @gray;
   a {
     display: block;
     width: 100%;

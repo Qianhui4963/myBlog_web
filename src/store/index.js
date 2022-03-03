@@ -1,13 +1,12 @@
-import Vuex from "vuex"
+import {Store,install} from "vuex"
 import Vue from "vue"
 import banner from "./banner"
 import setting from "./setting"
 import about from "./about"
 import project from "./project"
+install(Vue)
 
-Vue.use(Vuex)
-
-const store = new Vuex.Store({
+const store = new Store({
     modules: {
         banner,
         setting,

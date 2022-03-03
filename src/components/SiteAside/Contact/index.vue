@@ -27,7 +27,7 @@
         <span>15826753270</span></a
       >
       <div class="pop">
-        <img src="../../../assets/qq.png" />
+        <img src="../../../assets/weChat.jpg" />
       </div>
     </li>
   </ul>

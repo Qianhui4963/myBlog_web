@@ -1,11 +1,10 @@
 <template>
   <div class="carousel-item-contatiner">
     <div class="carousel-item">
-      <ImageLoader :src="carousel.bigImg" :placeholder="carousel.midImg" />
-      <!-- <ImageLoader
+      <ImageLoader
         :src="$S_URL + carousel.bigImg"
         :placeholder="$S_URL + carousel.midImg"
-      /> -->
+      />
     </div>
     <div class="title">{{ carousel.title }}</div>
     <div class="desc">{{ carousel.description }}</div>

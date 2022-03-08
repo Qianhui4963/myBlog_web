@@ -1,8 +1,7 @@
 <template>
   <ul class="data-list-container">
     <li v-for="item in list" :key="item.id">
-      <Avatar :url="item.avatar" :size="44" />
-      <!-- <Avatar :url="$S_URL + item.avatar" :size="44" /> -->
+      <Avatar :url="$S_URL + item.avatar" :size="44" />
       <div class="data">
         <div class="nickname">{{ item.nickname }}</div>
         <div class="content">{{ item.content }}</div>

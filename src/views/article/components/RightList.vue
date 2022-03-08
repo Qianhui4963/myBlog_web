@@ -21,8 +21,8 @@ export default {
     return {};
   },
   methods: {
-    handleClick(item) {
-      this.$emit("select", item);
+    handleClick({id}) {
+      this.$emit("select", id);
     },
   },
   props: {

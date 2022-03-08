@@ -5,8 +5,7 @@
         :href="item.url ? item.url : `javascript:alert('该项目无法访问')`"
         :target="item.url ? '_blank' : '_self'"
       >
-        <img class="project-thumb" v-lazy="item.thumb"/>
-        <!-- <img class="project-thumb" v-lazy="$S_URL+ item.thumb"/> -->
+        <img class="project-thumb" v-lazy="$S_URL+ item.thumb"/>
         </a>
       <div class="project-item-info">
         <h2>

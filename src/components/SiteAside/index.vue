@@ -2,7 +2,7 @@
   <div class="site-aside-contatiner">
       <Avatar :url="data.avatar" v-if="data"/>
       <Menu />
-      <Contact :data="data" />
+      <Contact :data="data" v-if="data"/>
       <p class="other" v-if="data">{{data.icp}}</p>
   </div>
 </template>

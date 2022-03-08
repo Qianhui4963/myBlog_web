@@ -31,8 +31,7 @@ export default {
                 link = document.createElement("link")
                 link.rel = "shortcut icon"
                 link.type = "images/x-icon"
-                link.href = result.favicon
-                // link.href = new Vue().$S_URL + result.favicon
+                link.href = new Vue().$S_URL + result.favicon
                 document.querySelector("head").appendChild(link)
             }
             // 设置网站标题

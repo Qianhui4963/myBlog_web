@@ -6,16 +6,11 @@ import "./styles/global.less"
 import router from "./router"
 // 引入Vuex仓库配置
 import store from "./store"
-// 拦截ajax请求
-import "@/mock"
 // 监控事件总线
 import "./eventBus"
 
 Vue.prototype.$S_URL = 'http://127.0.0.1:7001'
 
-// 也可以把showMessage放入实例中。简化调用
-// import showMessage from './utils/showMessage';
-// Vue.prototype.showMessage = showMessage;
 
 // 注册自定义指令。v-loading
 import vLoading from "@/directives/vLoading"
@@ -28,7 +23,6 @@ store.dispatch("setting/fetchSetting")
 
 
 new Vue({
-  // 配置路由。router:router,
   store,
   router,
   render: h => h(App),

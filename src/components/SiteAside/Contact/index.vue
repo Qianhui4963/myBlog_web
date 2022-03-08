@@ -1,35 +1,33 @@
 <template>
   <ul class="contact-contatiner">
     <li>
-      <a :href="data.github" target="_blank">
+      <a :href="data.github || ''" target="_blank">
         <div class="icon"><Icon type="github" /></div>
-        <span>{{data.githubName}}</span></a
+        <span>{{ data.githubName }}</span></a
       >
     </li>
     <li>
       <a href="#">
         <div class="icon"><Icon type="email" /></div>
-        <span>{{data.mail}}</span></a
+        <span>{{ data.mail }}</span></a
       >
     </li>
     <li>
       <a href="#">
         <div class="icon"><Icon type="qq" /></div>
-        <span>{{data.qq}}</span></a
+        <span>{{ data.qq }}</span></a
       >
       <div class="pop">
-        <img src="../../../assets/qq.png" />
-        <!-- <img :src="$S_URL+data.qqQrCode" /> -->
+        <img :src="$S_URL + data.qqQrCode" />
       </div>
     </li>
     <li>
       <a href="#">
         <div class="icon"><Icon type="weixin" /></div>
-        <span>{{data.weixin}}</span></a
+        <span>{{ data.weixin }}</span></a
       >
       <div class="pop">
-        <img src="../../../assets/weChat.jpg" />
-        <!-- <img :src="$S_URL+data.weixinQrCode" /> -->
+        <img :src="$S_URL + data.weixinQrCode" />
       </div>
     </li>
   </ul>
@@ -38,7 +36,7 @@
 <script>
 import Icon from "@/components/Icon";
 export default {
-  props:["data"],
+  props: ["data"],
   data() {
     return {};
   },

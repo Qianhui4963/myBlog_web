@@ -11,12 +11,11 @@
               },
             }"
           >
-            <img v-lazy="item.thumb" :alt="item.title" :title="item.title" />
-            <!-- <img
+            <img
               v-lazy="$S_URL + item.thumb"
               :alt="item.title"
               :title="item.title"
-            /> -->
+            />
           </router-link>
         </div>
         <div class="main">
@@ -112,7 +111,7 @@ export default {
   },
   computed: {
     routeInfo() {
-      const categoryId = +this.$route.params.categoryId || -1;
+      const categoryId = this.$route.params.categoryId || -1;
       const page = +this.$route.query.page || 1;
       const limit = +this.$route.query.limit || 10;
       return {

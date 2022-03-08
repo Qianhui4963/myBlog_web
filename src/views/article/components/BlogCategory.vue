@@ -16,7 +16,7 @@ export default {
   },
   computed: {
     categoryId() {
-      return +this.$route.params.categoryId || -1;
+      return this.$route.params.categoryId || -1;
     },
     list() {
       // 给reduce传一个初始值0，并把它作为参数的第一项
@@ -43,14 +43,14 @@ export default {
     async fetchData() {
       return await getBlogTypes();
     },
-    handleClick(item) {
+    handleClick(id) {
       const query = {
         page: 1,
         limit: this.limit,
       };
       // 如果点击的还是当前分类，不跟该路由
-      if(item.id == this.categoryId){return}
-      if (item.id === -1) {
+      if(id == this.categoryId){return}
+      if (id === -1) {
         this.$router.push({
           name: "article",
           query,
@@ -60,7 +60,7 @@ export default {
           name: "CategoryBlog",
           query,
           params: {
-            categoryId: item.id,
+            categoryId: id,
           },
         });
       }

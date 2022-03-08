@@ -1,6 +1,0 @@
-import "@/mock/banner.js"
-import "@/mock/blog.js"
-import "@/mock/setting.js"
-import "@/mock/about.js"
-import "@/mock/project.js"
-import "@/mock/message.js"

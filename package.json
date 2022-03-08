@@ -4,18 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "test-Icon": "vue serve ./src/components/Icon/test.vue",
-    "test-Page": "vue serve ./src/components/page/test.vue",
-    "test-Empty": "vue serve ./src/components/Empty/test.vue",
-    "test-ImageLoader": "vue serve ./src/components/ImageLoader/test.vue",
-    "test-Contact": "vue serve ./src/components/SiteAside/Contact/test.vue",
-    "test-Avatar": "vue serve ./src/components/SiteAside/Avatar/test.vue",
-    "test-Menu": "vue serve ./src/components/SiteAside/Menu/test.vue",
-    "test-SiteAside": "vue serve ./src/components/SiteAside/test.vue",
-    "test-Layout": "vue serve ./src/components/Layout/test.vue",
-    "test-Loading": "vue serve ./src/components/Loading/test.vue",
-    "test-RightList": "vue serve ./src/views/article/components/test.vue"
+    "build": "vue-cli-service build"
   },
   "dependencies": {
     "axios": "^0.22.0",

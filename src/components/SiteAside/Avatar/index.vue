@@ -6,7 +6,7 @@
       height: height + 'px',
     }"
   >
-    <img class="avatar_img" :src="url" />
+    <img class="avatar_img" :src="$S_URL + url" />
   </div>
 </template>
 

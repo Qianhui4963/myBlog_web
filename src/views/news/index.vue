@@ -60,7 +60,6 @@ export default {
       const range = 150;
       // 元素的全高(包括溢出部分) - 当前元素(相对于视口)到顶部的距离 - 当前元素的高(相对于视口)
       let dif = Math.abs(dom.scrollHeight - dom.scrollTop - dom.clientHeight);
-      console.log(dom);
       if (dif <= range) {
         this.fetchMore();
       }

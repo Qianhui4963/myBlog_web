@@ -8,7 +8,6 @@ import Article from "../views/article"
 import About from "../views/about"
 import Project from "../views/project"
 import News from "../views/news"
-import Email from "../views/email"
 import Detail from "../views/article/Detail.vue"
 // 404页面
 import nothingness from "@/components/404"
@@ -49,11 +48,6 @@ const router = new VueRouter({
     {
       name: "news", path: "/news", component: News, meta: {
         title: "留言板"
-      }
-    },
-    {
-      name: "email", path: "/email", component: Email, meta: {
-        title: "邮箱"
       }
     },
     {

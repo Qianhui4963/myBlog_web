@@ -1,6 +1,6 @@
 import { getSetting } from "../api/getsetting"
 import titleControl from "@/utils/titleControl"
-
+import Vue from "vue"
 export default {
     namespaced: true,
     state: {
@@ -32,6 +32,7 @@ export default {
                 link.rel = "shortcut icon"
                 link.type = "images/x-icon"
                 link.href = result.favicon
+                // link.href = new Vue().$S_URL + result.favicon
                 document.querySelector("head").appendChild(link)
             }
             // 设置网站标题

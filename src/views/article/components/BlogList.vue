@@ -12,6 +12,11 @@
             }"
           >
             <img v-lazy="item.thumb" :alt="item.title" :title="item.title" />
+            <!-- <img
+              v-lazy="$S_URL + item.thumb"
+              :alt="item.title"
+              :title="item.title"
+            /> -->
           </router-link>
         </div>
         <div class="main">

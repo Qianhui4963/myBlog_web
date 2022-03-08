@@ -1,5 +1,5 @@
 export default function (timestamp, showTime = false) {
-    const date = new Date(+timestamp)
+    const date = new Date(+timestamp + 8 * 3600 * 1000)
     const month = (date.getMonth() + 1).toString().padStart(2, "0")
     const day = date.getDate().toString().padStart(2, "0")
     let str = `${date.getFullYear()}-${month}-${day}`

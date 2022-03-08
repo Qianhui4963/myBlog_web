@@ -5,8 +5,9 @@
         :href="item.url ? item.url : `javascript:alert('该项目无法访问')`"
         :target="item.url ? '_blank' : '_self'"
       >
-        <img class="project-thumb" v-lazy="item.thumb"
-      /></a>
+        <img class="project-thumb" v-lazy="item.thumb"/>
+        <!-- <img class="project-thumb" v-lazy="$S_URL+ item.thumb"/> -->
+        </a>
       <div class="project-item-info">
         <h2>
           <a
@@ -16,7 +17,7 @@
             {{ item.name }}
           </a>
         </h2>
-        <a class="github" target="_blank" v-if="item.github"> github </a>
+        <a class="github" target="_blank" :href="item.github" v-if="item.github"> github </a>
         <p v-for="(desc, i) in item.description" :key="i">{{ desc }}</p>
       </div>
     </div>

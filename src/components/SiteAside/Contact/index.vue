@@ -1,33 +1,35 @@
 <template>
   <ul class="contact-contatiner">
     <li>
-      <a href="https://github.com/Qianhui4963/myBlog_web/" target="_blank">
+      <a :href="data.github" target="_blank">
         <div class="icon"><Icon type="github" /></div>
-        <span>GitHub</span></a
+        <span>{{data.githubName}}</span></a
       >
     </li>
     <li>
       <a href="#">
         <div class="icon"><Icon type="email" /></div>
-        <span>2741607698@qq.com</span></a
+        <span>{{data.mail}}</span></a
       >
     </li>
     <li>
       <a href="#">
         <div class="icon"><Icon type="qq" /></div>
-        <span>2741607698</span></a
+        <span>{{data.qq}}</span></a
       >
       <div class="pop">
         <img src="../../../assets/qq.png" />
+        <!-- <img :src="$S_URL+data.qqQrCode" /> -->
       </div>
     </li>
     <li>
       <a href="#">
         <div class="icon"><Icon type="weixin" /></div>
-        <span>15826753270</span></a
+        <span>{{data.weixin}}</span></a
       >
       <div class="pop">
         <img src="../../../assets/weChat.jpg" />
+        <!-- <img :src="$S_URL+data.weixinQrCode" /> -->
       </div>
     </li>
   </ul>
@@ -36,6 +38,7 @@
 <script>
 import Icon from "@/components/Icon";
 export default {
+  props:["data"],
   data() {
     return {};
   },

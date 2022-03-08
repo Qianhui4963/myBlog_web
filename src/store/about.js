@@ -21,6 +21,7 @@ export default {
             }
             context.commit("setLoading", true)
             const result = await getAbout()
+            console.log(result)
             context.commit("setData", result)
             context.commit("setLoading", false)
         }

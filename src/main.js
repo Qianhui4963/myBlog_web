@@ -11,6 +11,8 @@ import "@/mock"
 // 监控事件总线
 import "./eventBus"
 
+Vue.prototype.$S_URL = 'http://127.0.0.1:7001'
+
 // 也可以把showMessage放入实例中。简化调用
 // import showMessage from './utils/showMessage';
 // Vue.prototype.showMessage = showMessage;
